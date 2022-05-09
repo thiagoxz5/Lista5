@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void) {
+  int x, y;
+  int *px;
+  int *py;
+  printf("Digite dois números inteiros: \n");
+  scanf("%d %d", &x, &y);
+  printf("Esse é o endereço da primeira variável: %p \n", &x);
+  printf("Esse é o endereço da segunda variável: %p \n", &y); 
+  px = &x;
+  py = &y;
+
+  if (px > py) {
+    printf("%p é o maior endereço\n", px);
+} else {
+    printf("%p é o maior endereço\n", py);
+  }
+}
