@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void) {
+  int valor = 3;
+  int *valorPtr;
+
+  valorPtr = &valor;
+  printf("%d \n",valor);
+  printf("%d \n",*valorPtr);
+  printf("%p \n",&valor);
+  printf("%p \n",valorPtr);
+}
+
+/* As alternativas B e C são as verdadeiras, visto que o valor apontado pelo ponteiro valorPtr assume o endereço de valor
+A alternativa C está correta pelo fato de valorPtr ser atribuido diretamente ao endereço da variável valor.*/
